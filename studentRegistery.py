@@ -8,7 +8,7 @@ root.title('Tkinter Phat')
 student_data = [[1,'Jond','Jond@student.com','Python'],
                 [2,'Phat','Jond@student.com','Python'],
                 [3,'He','Jond@student.com','Python'],]
-
+ #ok
 def load_student_data():
     for item in record_tb.get_children():
         record_tb.delete(item)  
@@ -16,7 +16,7 @@ def load_student_data():
     for r in range(len(student_data)):
         # print("chieu dai:",str(len(student_data)))
         record_tb.insert('','end',text='',iid=r,values=student_data[r]) 
-
+    
 
 def add_student_data(stu_id,stu_name,stu_mail,stu_course):
     student_data.append([stu_id,stu_name,stu_mail,stu_course])
